@@ -89,7 +89,7 @@ const dataPush3 = async ()=>{
                 countETH++;
             }
             if(webSocketData.stream==='bookTicker.SOL_USDC'){
-                objSOL.price = Math.trunc(Number(webSocketData.data.b)*1000),
+                objSOL.price = Math.trunc(Number(webSocketData.data.b)*10000),
                 objSOL.decimal = 4
                 objSOL.asset = "SOL"
                 countSOL++;
