@@ -1,13 +1,17 @@
 import WebSocket from "ws";
 import * as z from 'zod';
+import dotenv from 'dotenv';
+dotenv.config();
 const webSocketUri = new WebSocket("wss://ws.backpack.exchange");
 import {createClient} from 'redis';
-import { zodWSData } from "./typesAndZodRuntimes.js";
-import type { WSData, SentObject } from "./typesAndZodRuntimes.js";
+import { zodWSData } from "../types/typesAndZodRuntimes.js"
+// import type { WSData, SentObject } from "..types/typesAndZodRuntimes.js"
+import type {WSData, SentObject} from '../types/typesAndZodRuntimes.js'
 const redisClient = createClient({
-    url: "redis://localhost:6379"
+    url: process.env.REDIS_URL
 });
 try{
+    console.log(process.env.REDIS_URL);
     await redisClient.connect();
 }catch(e){
     console.log(`Some error occured while connecting to redis client: ${e}`);

@@ -1,4 +1,4 @@
-import dataPush3 from "./types/dataPush3.js";
+import dataPush3 from "./functions/dataPush3.js";
 async function main(){
     await dataPush3();
 }

@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/ReconElement/Poller#readme",
   "dependencies": {
+    "@types/dotenv": "^6.1.1",
     "@types/redis": "^4.0.10",
     "@types/ws": "^8.18.1",
+    "dotenv": "^17.2.3",
     "redis": "^5.10.0",
     "ws": "^8.18.3",
     "zod": "^4.1.13"

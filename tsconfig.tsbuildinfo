@@ -1,1 +1,1 @@
-{"root":["./src/index.ts","./src/types/dataPush3.ts","./src/types/typesAndZodRuntimes.ts"],"version":"5.9.3"}
+{"root":["./src/env.d.ts","./src/index.ts","./src/functions/dataPush3.ts","./src/types/typesAndZodRuntimes.ts"],"version":"5.9.3"}
